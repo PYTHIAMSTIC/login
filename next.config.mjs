@@ -5,15 +5,14 @@ const nextConfig = {
 
   // Image and 3D model optimization settings
   images: {
-    domains: ['example.com'],  // Add any external domains you need to load images from.
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840], // Optimize images for these screen sizes.
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],  // Optimize images for these specific sizes.
+    domains: ['palace.pythai.net'],  // Allow loading images from the NFT marketplace domain.
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840, 4096], // Future-proof for larger devices.
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512, 1024, 2048],  // Future-proof for large image sizes.
     formats: ['image/avif', 'image/webp', 'image/jpeg', 'image/png', 'image/gif', 'image/tiff'],  // Serve images in modern and traditional formats.
   },
 
   // Support for 3D model file formats commonly used in Unity and Web3 gaming
   webpack(config, { isServer }) {
-    // Fix issues with certain Node.js modules in the client-side environment.
     if (!isServer) {
       config.module.rules.push({
         test: /\.(glb|gltf|fbx|obj|stl|usd|usdz)$/i,  // Add support for these 3D model formats.
