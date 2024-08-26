@@ -1,10 +1,16 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+import { WalletConnect } from '../components/WalletConnect';
 
-const Home: NextPage = () => {
+const TorusBackground = dynamic(() => import('../components/TorusBackground'), { ssr: false });
+
+const Home = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
-      <ConnectButton />
+    <div id="login-container">
+      <TorusBackground />
+      <div id="login-box">
+        <h2>Login</h2>
+        <WalletConnect />
+      </div>
     </div>
   );
 };
