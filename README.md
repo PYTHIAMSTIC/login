@@ -32,7 +32,7 @@ login/
 
 # Pythia Login
 
-Welcome to the Pythia Login repository! This project is designed to provide a visually appealing and secure login interface for users before they access the Pythia NFT Marketplace. The login screen features a 3D torus effect and integrates Web3 wallet connections powered by RainbowKit.
+Welcome to the Pythia Login repository! This project is designed to provide a visually appealing and secure login interface for users before they access the Pythia NFT Marketplace. The login screen features a 3D torus effect and integrates Web3 wallet connections powered by next.js, three.js, rainbowKit, and wagmi
 
 ## Table of Contents
 
