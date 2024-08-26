@@ -5,7 +5,7 @@ const nextConfig = {
 
   // Image and 3D model optimization settings
   images: {
-    domains: ['delphi.pythainet'],  // Allow loading images from the NFT marketplace domain.
+    domains: ['delphi.pythai.net'],  // Allow loading images from the NFT marketplace domain.
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840, 4096], // Future-proof for larger devices.
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512, 1024, 2048],  // Future-proof for large image sizes.
     formats: ['image/avif', 'image/webp', 'image/jpeg', 'image/png', 'image/gif', 'image/tiff'],  // Serve images in modern and traditional formats.
