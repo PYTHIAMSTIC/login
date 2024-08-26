@@ -1,6 +1,6 @@
 import { configureChains, createClient } from 'wagmi';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
-import { publicProvider } from 'wagmi/providers/public';
+import { publicProvider } from '@wagmi/core/providers/public';
 import { getDefaultWallets } from '@rainbow-me/rainbowkit';
 
 const { chains, provider } = configureChains(
